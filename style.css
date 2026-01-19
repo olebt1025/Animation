@@ -1,42 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .carousel {
-    width: 300px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
 
 .viewport {
-    width: 300px;
+  width: 300px;
+  overflow: hidden;
 }
-
-
 
 .track {
   display: flex;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .item {
   width: 100px;
-  flex-shrink: 0;
-  opacity: 0.5;
-  transform: scale(0.8);
-  transition: transform 0.4s, opacity 0.3;
   height: 100px;
   background: #bbb;
+  margin-right: 20px; /* gap between items */
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: transform 0.4s, opacity 0.4s;
 }
 
 .item.active {
@@ -45,14 +43,7 @@
 }
 
 .arrow {
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
-}
-
-.arrow-left{
-    
-}
-
-.arrow-right{
-
+  user-select: none;
 }
