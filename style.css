@@ -5,6 +5,9 @@
 }
 
 .carousel {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
     margin-top: 4rem;
     display: flex;
     align-items: center;
@@ -14,33 +17,42 @@
 
 .viewport {
     width: 300px;
-    overflow: hidden;
 }
+
+
 
 .track {
   display: flex;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
 .item {
   width: 100px;
-  height: 100px;
   flex-shrink: 0;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: transform 0.4s, opacity 0.3;
+  height: 100px;
   background: #bbb;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.4;
-  transform: scale(0.7);
-  transition: 0.4s;
 }
 
 .item.active {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .arrow {
   font-size: 24px;
   cursor: pointer;
+}
+
+.arrow-left{
+    
+}
+
+.arrow-right{
+
 }
