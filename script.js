@@ -16,12 +16,24 @@ let currentIndex = 1;
  function updateCarousel(animate = true) {
 
     track.style.transition = animate ? "transform 0.3s ease" : "none";
-     items.forEach(item => item.classList.remove("active"));
+     
+    items.forEach(item => item.classList.remove("active"));
 
-     items[currentIndex].classList.add("active");
+    let realIndex = currentIndex -1;
 
-     const x = -(currentIndex * itemWidth) + centerOffset;
-     track.style.transform = `translateX(${x}px)`;
+    if (realIndex < 0) realIndex = items.length -1;
+    if (realIndex >= items.length) realIndex =0;
+
+    items[realIndex].classIndex * itemWidth + centerOffset;
+
+    const x = -(currentIndex * itemWidth) + centerOffset;
+
+    track.style.transform = 'translateX¤$(x)px';
+
+    //  items[currentIndex].classList.add("active");
+
+    //  const x = -(currentIndex * itemWidth) + centerOffset;
+    //  track.style.transform = `translateX(${x}px)`;
  }
 
 
