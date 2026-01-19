@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.viewport {
+    width: 300px;
+    overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transform: scale(0.7);
+  transition: 0.4s;
+}
+
+.item.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
