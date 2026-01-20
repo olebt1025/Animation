@@ -13,12 +13,12 @@ function updateCarousel() {
   items.forEach(item => item.classList.remove("active"));
   items[currentIndex].classList.add("active");
 
-  // move track
+  
   const x = -(currentIndex * itemWidth) + centerOffset;
   track.style.transform = `translateX(${x}px)`;
 }
 
-// arrow buttons
+
 document.querySelector(".arrow-left").addEventListener("click", () => {
   currentIndex--;
   updateCarousel();
@@ -29,7 +29,7 @@ document.querySelector(".arrow-right").addEventListener("click", () => {
   updateCarousel();
 });
 
-// keyboard arrows
+
 window.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") {
     currentIndex--;
@@ -40,5 +40,4 @@ window.addEventListener("keydown", e => {
   }
 });
 
-// initial state
 updateCarousel();
