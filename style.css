@@ -131,8 +131,27 @@ animation: chop .5s infinite;
   {
     rotate: 90deg;
   }
+}
 
+a{
+  text-decoration: none;
+  font-family: PistonBlack, sans-serif;
+  color: gold;
+  font-size: 20px;
+  text-shadow: 0 0 20px black;
+}
 
+@keyframes {
+  0% 
+  {
+    transform: 
+  }
+  
+}
+
+button{
+  border: none;
+  background:rgb(152, 56, 56) ;
 }
 
 .arrow {
