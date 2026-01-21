@@ -92,8 +92,7 @@ div{
   transform: scale(1.2);
   animation: bounce 5s infinite;
   background: #e1dcdc;
-  box-shadow: 0px 0px 10px 10px  #e1dcdc
-  ;
+  box-shadow: 0px 0px 10px 10px  #e1dcdc;
 }
 
 @keyframes bounce {
@@ -141,18 +140,27 @@ a{
   text-shadow: 0 0 20px black;
 }
 
-@keyframes {
-  0% 
-  {
-    transform: 
-  }
-  
-}
-
 button{
   border: none;
   background:rgb(152, 56, 56) ;
+  
 }
+
+button:hover {
+  animation: scaleText forwards 1s;
+}
+
+@keyframes scaleText {
+  0%
+  {
+    transform: scale(1)
+  }
+  100%
+  {
+    transform: scale(5);
+  }
+}
+
 
 .arrow {
   font-size: 30px;
